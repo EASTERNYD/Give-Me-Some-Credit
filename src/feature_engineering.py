@@ -1,5 +1,5 @@
 """
-特征分析与特征工程模块 (创新点3 + 创新点4)
+特征分析与特征工程模块
 - 多相关系数分析 (Pearson, Spearman, Kendall)
 - 相关性热图
 - 特征选择: 过滤式、包裹式(RFE)、嵌入式(Lasso/RF重要性)
@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Correlation analysis (创新点3)
+# Correlation analysis
 # ═══════════════════════════════════════════════════════════════════════════
 
 def compute_correlations(df, target_col=None, methods=None):
@@ -102,7 +102,7 @@ def plot_correlation_heatmap(corr_matrix, method_name, save_path=None):
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Feature selection (创新点4)
+# Feature selection
 # ═══════════════════════════════════════════════════════════════════════════
 
 def _get_xy(df, target_col):
